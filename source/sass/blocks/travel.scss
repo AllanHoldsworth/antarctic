@@ -1,0 +1,33 @@
+.travel {
+  padding: 120px 0 145px 0;
+}
+
+.travel__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.travel__text-wrapper {
+  padding-right: 88px;
+  padding-top: 59px;
+}
+
+.travel__title {
+  color: $color-tangaroa;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.travel p {
+  margin-top: 0;
+  color: $color-tangaroa;
+}
+
+.travel__img {
+  width: 560px;
+  display: flex;
+  height: auto;
+}
