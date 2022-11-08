@@ -25,6 +25,7 @@
   display: flex;
   min-height: 386px;
   padding: 30px 10px 21px 30px;
+  overflow: hidden;
 }
 
 .catalog__img {
@@ -36,7 +37,11 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  overflow: hidden;
+}
+
+.catalog__img--olympia {
+  object-position: -118px 16px;
+  height: 416px;
 }
 
 .catalog__subtitle {

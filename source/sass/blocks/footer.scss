@@ -1,0 +1,14 @@
+.footer {
+  background-color: $color-tangaroa;
+  padding: 50px 0;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer-nav {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}

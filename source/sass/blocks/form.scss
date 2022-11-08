@@ -1,0 +1,91 @@
+.form {
+  background-color: $color-tangaroa;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  padding: 43px 50px 50px 50px;
+  min-height: 455px;
+}
+
+.form__field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.form__description {
+  font-weight: 500;
+  line-height: 27px;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.form__field input {
+  border: none;
+  background-color: $color-alice-blue;
+  padding: 13px 30px 13px 16px;
+  margin-bottom: 18px;
+}
+
+.form__field input::placeholder {
+  color: $color-tangaroa;
+  opacity: 0.7;
+  font-family: $ff-primary;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.form__field label {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-alice-blue;
+  font-size: 10px;
+  line-height: 13px;
+  padding-left: 24px;
+  margin-bottom: 31px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.form__field input[type="checkbox"] {
+  top: 68%;
+  left: 3%;
+}
+
+.form__field label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: $color-alice-blue;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form__field input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(40%, -60%);
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/svg/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__field button {
+  border: none;
+  background-color: $color-alice-blue;
+  font-family: $ff-primary;
+  font-weight: 600;
+  color: $color-tangaroa;
+  line-height: 21px;
+  font-size: 14px;
+  padding: 13px 0 9px 0;
+  user-select: none;
+  cursor: pointer;
+}

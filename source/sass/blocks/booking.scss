@@ -1,7 +1,34 @@
 .booking {
-  // background-image: url("../../img/booking-bg.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: 100% 100%;
-  // min-height: 555px;
+  background-image: url("../img/booking-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top -20px center;
+  background-size: cover;
+  min-height: 555px;
+  padding: 50px 0;
+}
+
+.booking__container {
+  display: grid;
+  grid-template-columns: 1fr 404px;
+  padding: 0 80px;
+}
+
+.booking__text-wrapper {
+  padding-top: 163px;
+}
+
+.booking__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $color-tangaroa;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.booking__description {
+  font-size: 18px;
+  color: $color-tangaroa;
+  width: 58%;
+  margin: 0;
 }
