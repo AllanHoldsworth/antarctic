@@ -1,0 +1,23 @@
+.socials {
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    gap: 18px;
+  }
+}
+
+.socials__link {
+  display: flex;
+}
+
+.socials__link svg {
+  @include vp-1023 {
+    transform: scale(0.8);
+  }
+}

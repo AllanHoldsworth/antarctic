@@ -1,5 +1,9 @@
 .catalog {
   padding: 93px 0 120px 0;
+
+  @include vp-1023 {
+    padding: 90px 0 100px 0;
+  }
 }
 
 .catalog__title {
@@ -9,6 +13,12 @@
   margin-bottom: 60px;
   font-weight: 600;
   font-size: 28px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 48px;
+  }
 }
 
 .catalog__list {
@@ -18,14 +28,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px 30px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .catalog__item {
   position: relative;
   display: flex;
   min-height: 386px;
-  padding: 30px 10px 21px 30px;
+  padding: 30px 10px 23px 30px;
   overflow: hidden;
+
+  @include vp-1023 {
+    padding: 30px 10px 27px 35px;
+  }
 }
 
 .catalog__img {

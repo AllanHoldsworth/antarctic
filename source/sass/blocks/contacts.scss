@@ -1,10 +1,18 @@
 .contacts {
   padding: 120px 0;
+
+  @include vp-1023 {
+    padding-bottom: 85px;
+  }
 }
 
 .contacts__container {
   display: grid;
-  grid-template-columns: 560px 1fr;
+  grid-template-columns: minmax(300px, 48%) minmax(300px, 52%);
+
+  @include vp-1023 {
+    grid-template-columns: minmax(300px, 52.3%) minmax(300px, 47.7%);
+  }
 }
 
 .contacts__map {
@@ -14,7 +22,12 @@
 
 .contacts__text-wrapper {
   padding-top: 74px;
-  padding-left: 99px;
+  padding-left: 103px;
+
+  @include vp-1023 {
+    padding-top: 21px;
+    padding-left: 0;
+  }
 }
 
 .contacts__description {
@@ -32,6 +45,10 @@
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 23px;
+
+  @include vp-1023 {
+    margin-bottom: 17px;
+  }
 }
 
 .contacts__address svg {

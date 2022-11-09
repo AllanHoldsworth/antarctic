@@ -800,7 +800,7 @@ button,
   align-self: center;
 }
 
-.header-nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,7 +810,7 @@ button,
   margin-left: auto;
 }
 
-.header-nav__list {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,7 +820,7 @@ button,
   gap: 30px 33px;
 }
 
-.header-nav__link {
+.nav__link {
   font-weight: 500;
   line-height: 20px;
   color: #f9fbfd;
@@ -831,7 +831,7 @@ button,
 }
 
 .intro__text-wrapper {
-  padding: 163px 0 175px 76px;
+  padding: 163px 0 175px 75px;
 }
 
 .intro__title {
@@ -857,12 +857,12 @@ button,
 .travel__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto;
-  grid-template-columns: 1fr auto;
+  -ms-grid-columns: 45% auto;
+  grid-template-columns: 45% auto;
+  gap: 80px;
 }
 
 .travel__text-wrapper {
-  padding-right: 88px;
   padding-top: 59px;
 }
 
@@ -878,6 +878,7 @@ button,
 .travel p {
   margin-top: 0;
   color: #011c40;
+  line-height: 24px;
 }
 
 .travel__img {
@@ -894,7 +895,7 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  padding: 112px 0 120px 0;
+  padding: 112px 0 122px 0;
 }
 
 .advantages__title {
@@ -970,7 +971,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   min-height: 386px;
-  padding: 30px 10px 21px 30px;
+  padding: 30px 10px 23px 30px;
   overflow: hidden;
 }
 
@@ -1014,8 +1015,11 @@ button,
 .booking__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 404px;
-  grid-template-columns: 1fr 404px;
+  -ms-grid-columns: 61.2% 38.8%;
+  grid-template-columns: 61.2% 38.8%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 0 80px;
 }
 
@@ -1183,8 +1187,8 @@ button,
 .contacts__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 560px 1fr;
-  grid-template-columns: 560px 1fr;
+  -ms-grid-columns: minmax(300px, 48%) minmax(300px, 52%);
+  grid-template-columns: minmax(300px, 48%) minmax(300px, 52%);
 }
 
 .contacts__map {
@@ -1194,7 +1198,7 @@ button,
 
 .contacts__text-wrapper {
   padding-top: 74px;
-  padding-left: 99px;
+  padding-left: 103px;
 }
 
 .contacts__description {
@@ -1231,7 +1235,7 @@ button,
 
 .footer {
   background-color: #011c40;
-  padding: 50px 0;
+  padding: 46px 0 50px 0;
 }
 
 .footer__container {
@@ -1240,7 +1244,7 @@ button,
   display: flex;
 }
 
-.footer-nav {
+.footer__nav {
   margin-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1248,6 +1252,26 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.socials {
+  margin: 0;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 27px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* @mixin hover-focus {
@@ -1290,6 +1314,228 @@ button,
     }
   }
 */
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 45px;
+  }
+
+  .intro-wrapper {
+    min-height: 638px;
+  }
+
+  .header {
+    padding: 28px 0;
+  }
+
+  .header__container {
+    padding: 0;
+  }
+
+  .header__icon {
+    width: 38px;
+    height: 20px;
+  }
+
+  .nav__list {
+    gap: 23px 24px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .intro__container {
+    padding: 0;
+  }
+
+  .intro__text-wrapper {
+    padding: 188px 0 175px 0px;
+  }
+
+  .intro__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .intro__description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .travel {
+    padding: 90px 0 77px 0;
+  }
+
+  .travel__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 47.5% 47.7%;
+    grid-template-columns: 47.5% 47.7%;
+    gap: 27px;
+  }
+
+  .travel__text-wrapper {
+    padding-top: 0;
+  }
+
+  .travel__title {
+    font-size: 26px;
+    line-height: 36px;
+    max-width: 80%;
+    margin-bottom: 17px;
+  }
+
+  .travel__img {
+    margin-top: 10px;
+  }
+
+  .advantages {
+    padding: 90px 0 100px 0;
+  }
+
+  .advantages__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__list {
+    grid-gap: 40px 26px;
+  }
+
+  .advantages__item {
+    min-height: 310px;
+    padding: 25px 19px 22px;
+  }
+
+  .advantages__item svg {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .advantages__list h3 {
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  .catalog {
+    padding: 90px 0 100px 0;
+  }
+
+  .catalog__title {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 48px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog__item {
+    padding: 30px 10px 27px 35px;
+  }
+
+  .booking {
+    padding-top: 90px;
+    padding-bottom: 125px;
+  }
+
+  .booking__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .booking__text-wrapper {
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .booking__title {
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 6px;
+  }
+
+  .booking__description {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .form {
+    padding-top: 45px;
+    width: 59.5%;
+  }
+
+  .contacts {
+    padding-bottom: 85px;
+  }
+
+  .contacts__container {
+    -ms-grid-columns: minmax(300px, 52.3%) minmax(300px, 47.7%);
+    grid-template-columns: minmax(300px, 52.3%) minmax(300px, 47.7%);
+  }
+
+  .contacts__text-wrapper {
+    padding-top: 21px;
+    padding-left: 0;
+  }
+
+  .contacts__address {
+    margin-bottom: 17px;
+  }
+
+  .footer__nav {
+    margin-left: 25px;
+  }
+
+  .footer__icon {
+    width: 38px;
+    height: 20px;
+  }
+
+  .footer__logo-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  .footer__nav .nav__link {
+    font-size: 12px;
+  }
+
+  .socials {
+    gap: 18px;
+  }
+
+  .socials__link svg {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
 
 @media (max-width: 767px) {
   .modal__wrapper {

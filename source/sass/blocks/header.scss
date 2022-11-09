@@ -1,10 +1,18 @@
 .header {
   padding: 35px 0;
+
+  @include vp-1023 {
+    padding: 28px 0;
+  }
 }
 
 .header__container {
   display: flex;
   padding: 0;
+
+  @include vp-1023 {
+    padding: 0;
+  }
 }
 
 .header__logo-link {
@@ -12,22 +20,9 @@
   align-self: center;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header-nav__list {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 30px 33px;
-}
-
-.header-nav__link {
-  font-weight: 500;
-  line-height: 20px;
-  color: $color-alice-blue;
+.header__icon {
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
 }
