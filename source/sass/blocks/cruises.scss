@@ -68,6 +68,21 @@
   margin-bottom: auto;
   display: none;
   overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    background-color: $color-default-white;
+    width: 3px;
+    display: block;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $color-tangaroa;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-alice-blue;
+    background-clip: padding-box;
+  }
 }
 
 .cruises__item:hover .cruises__description-list {
