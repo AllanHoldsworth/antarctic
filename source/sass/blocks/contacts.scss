@@ -4,6 +4,11 @@
   @include vp-1023 {
     padding-bottom: 85px;
   }
+
+  @include vp-767 {
+    padding-top: 36px;
+    padding-bottom: 110px;
+  }
 }
 
 .contacts__container {
@@ -13,11 +18,21 @@
   @include vp-1023 {
     grid-template-columns: minmax(300px, 52.3%) minmax(300px, 47.7%);
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contacts__map {
   width: 560px;
   height: 306px;
+
+  @include vp-767 {
+    order: 1;
+    width: 100%;
+  }
 }
 
 .contacts__text-wrapper {
@@ -28,6 +43,10 @@
     padding-top: 21px;
     padding-left: 0;
   }
+
+  @include vp-767 {
+    order: 0;
+  }
 }
 
 .contacts__description {
@@ -37,6 +56,10 @@
   color: $color-tangaroa;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__address {
@@ -49,6 +72,10 @@
   @include vp-1023 {
     margin-bottom: 17px;
   }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+  }
 }
 
 .contacts__address svg {
@@ -59,6 +86,14 @@
 .contacts__link {
   color: $color-tangaroa;
   line-height: 24px;
+
+  &:hover {
+    text-shadow: 0 0 1px $color-tangaroa;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .contacts__link svg {

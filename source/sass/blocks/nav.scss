@@ -21,6 +21,15 @@ nav {
   line-height: 20px;
   color: $color-alice-blue;
 
+  &:hover {
+    // color: $color-default-black;
+    text-shadow: 0 0 2px $color-alice-blue;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
   @include vp-1023 {
     font-size: 14px;
     line-height: 17px;

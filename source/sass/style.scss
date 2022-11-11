@@ -14,19 +14,21 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "global/intro-wrapper.scss";
+
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/top-wrapper.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/travel.scss";
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
+@import "blocks/cruises.scss";
 @import "blocks/booking.scss";
 @import "blocks/form.scss";
 @import "blocks/contacts.scss";

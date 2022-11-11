@@ -4,13 +4,18 @@
   @include vp-1023 {
     padding: 90px 0 100px 0;
   }
+
+  @include vp-767 {
+    padding-top: 57px;
+    padding-bottom: 65px;
+  }
 }
 
 .catalog__title {
   color: $color-tangaroa;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
   font-weight: 600;
   font-size: 28px;
 
@@ -19,53 +24,10 @@
     line-height: 39px;
     margin-bottom: 48px;
   }
-}
 
-.catalog__list {
-  margin: 0;
-  padding: 0 15px;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px 30px;
-
-  @include vp-1023 {
-    grid-template-columns: 1fr 1fr;
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
   }
-}
-
-.catalog__item {
-  position: relative;
-  display: flex;
-  min-height: 386px;
-  padding: 30px 10px 23px 30px;
-  overflow: hidden;
-
-  @include vp-1023 {
-    padding: 30px 10px 27px 35px;
-  }
-}
-
-.catalog__img {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.catalog__img--olympia {
-  object-position: -118px 16px;
-  height: 416px;
-}
-
-.catalog__subtitle {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 0;
-  margin-top: auto;
 }

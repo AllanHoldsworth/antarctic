@@ -10,6 +10,12 @@
     padding-top: 90px;
     padding-bottom: 125px;
   }
+
+  @include vp-767 {
+    padding-top: 60px;
+    padding-bottom: 66px;
+    background-size: unset;
+  }
 }
 
 .booking__container {
@@ -49,6 +55,13 @@
     line-height: 51px;
     margin-bottom: 6px;
   }
+
+  @include vp-767 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 13px;
+  }
 }
 
 .booking__description {
@@ -60,5 +73,12 @@
   @include vp-1023 {
     text-align: center;
     margin-bottom: 55px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22px;
+    width: 90%;
+    margin-bottom: 34px;
   }
 }
