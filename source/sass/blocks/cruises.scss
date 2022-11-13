@@ -51,8 +51,41 @@
 }
 
 .cruises__img--olympia {
-  object-position: -118px 16px;
+  object-position: -39px 14px;
   height: 416px;
+
+  @include vp-1023 {
+    object-position: -59px 30px;
+    height: 445px;
+  }
+
+  @include vp-767 {
+    object-position: unset;
+  }
+
+  @media (max-width: 414px) {
+    object-position: -59px 30px;
+    height: 445px;
+  }
+}
+
+.cruises__img--odysseus {
+  object-position: -118px 16px;
+  height: 426px;
+
+  @include vp-1023 {
+    object-position: -103px 34px;
+    height: 452px;
+  }
+
+  @include vp-767 {
+    object-position: unset;
+  }
+
+  @media (max-width: 414px) {
+    object-position: -126px 34px;
+    height: 453px;
+  }
 }
 
 .cruises__subtitle {

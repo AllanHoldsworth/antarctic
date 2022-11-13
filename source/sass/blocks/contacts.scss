@@ -2,12 +2,13 @@
   padding: 120px 0;
 
   @include vp-1023 {
-    padding-bottom: 85px;
+    padding-bottom: 101px;
+    padding-top: 75px;
   }
 
   @include vp-767 {
-    padding-top: 36px;
-    padding-bottom: 110px;
+    padding-top: 57px;
+    padding-bottom: 45px;
   }
 }
 
@@ -29,7 +30,13 @@
   width: 560px;
   height: 306px;
 
+  @include vp-1023 {
+    width: 91.48%;
+    height: 335px;
+  }
+
   @include vp-767 {
+    margin-top: 36px;
     order: 1;
     width: 100%;
   }
@@ -40,12 +47,13 @@
   padding-left: 103px;
 
   @include vp-1023 {
-    padding-top: 21px;
+    padding-top: 68px;
     padding-left: 0;
   }
 
   @include vp-767 {
     order: 0;
+    padding-top: 0;
   }
 }
 
@@ -57,8 +65,35 @@
   margin-top: 0;
   margin-bottom: 30px;
 
+  @include vp-1023 {
+    margin-bottom: 26px;
+  }
+
   @include vp-767 {
     margin-bottom: 25px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  margin-bottom: 22px;
+
+  @include vp-1023 {
+    margin-bottom: 21px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+  }
+}
+
+.contacts__wrapper svg {
+  flex-shrink: 0;
+}
+
+.contacts__icon--pin {
+  @include vp-1023 {
+    margin-top: 7px;
   }
 }
 
@@ -67,25 +102,13 @@
   color: $color-tangaroa;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 23px;
-
-  @include vp-1023 {
-    margin-bottom: 17px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 23px;
-  }
-}
-
-.contacts__address svg {
-  vertical-align: bottom;
-  margin-right: 7px;
+  margin-left: 11px;
 }
 
 .contacts__link {
   color: $color-tangaroa;
   line-height: 24px;
+  margin-left: 11px;
 
   &:hover {
     text-shadow: 0 0 1px $color-tangaroa;
@@ -94,9 +117,4 @@
   &:active {
     opacity: 0.8;
   }
-}
-
-.contacts__link svg {
-  vertical-align: middle;
-  margin-right: 6px;
 }

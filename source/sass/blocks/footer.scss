@@ -19,6 +19,7 @@
   margin-left: 40px;
   display: flex;
   align-items: center;
+  max-width: 80%;
 
   @include vp-1023 {
     margin-left: 25px;
@@ -30,6 +31,8 @@
 }
 
 .footer__nav .nav__list {
+  flex-wrap: wrap;
+
   @include vp-767 {
     flex-direction: column;
     gap: 8px 10px;
@@ -55,6 +58,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 20px;
     align-self: flex-start;
   }
 }

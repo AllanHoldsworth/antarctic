@@ -6,8 +6,18 @@
   background-size: 100% 100%;
   padding: 112px 0 122px 0;
 
+  @media (min-width: 1023px) {
+    @include retina {
+      background-image: url("../img/advantages-bg@2x.jpg");
+    }
+  }
+
   @include vp-1023 {
     padding: 90px 0 100px 0;
+
+    @include retina {
+      background-image: url("../img/advantages-bg@2x.jpg");
+    }
   }
 
   @include vp-767 {

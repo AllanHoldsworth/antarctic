@@ -8,7 +8,54 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
+  const anchors = document.querySelectorAll('a[href*="#anchor"]');
+  if (anchors) {
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        const blockID = anchor.getAttribute('href');
+        document.querySelector('' + blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      });
+    }
+  }
+
+  // mobile menu
+
+  let navMain = document.querySelector('.main-nav');
+  let navToggle = document.querySelector('.main-nav__toggle');
+  navMain.classList.remove('main-nav--nojs');
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
   iosVhFix();
+
+  function initMap() {
+    let map = new ymaps.Map('map', {
+      center: [59.937635, 30.322618],
+      zoom: 17,
+    });
+
+    let pin = new ymaps.Placemark([59.937635, 30.322618], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/sprite/pin.svg',
+      iconImageSize: [18, 22],
+      iconImageOffset: [0, 0],
+    });
+
+    map.geoObjects.add(pin);
+  }
+
+  ymaps.ready(initMap);
 
   // Modules
   // ---------------------------------

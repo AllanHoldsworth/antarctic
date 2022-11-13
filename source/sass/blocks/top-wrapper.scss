@@ -6,13 +6,27 @@
   background-position: center;
   background-size: 100% 100%;
 
+  @media (min-width: 1023px) {
+    @include retina {
+      background-image: url("../img/main-bg@2x.jpg");
+    }
+  }
+
   @include vp-1023 {
     min-height: 638px;
     background-image: url("../img/main-bg-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/main-bg-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     min-height: 500px;
     background-image: url("../img/main-bg-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/main-bg-mobile@2x.jpg");
+    }
   }
 }

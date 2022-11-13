@@ -3,18 +3,35 @@
   background-repeat: no-repeat;
   background-position: top -20px center;
   background-size: cover;
-  min-height: 555px;
   padding: 50px 0;
+
+  @media (min-width: 1023px) {
+    @include retina {
+      background-image: url("../img/booking-bg@2x.jpg");
+      background-position: center;
+    }
+  }
 
   @include vp-1023 {
     padding-top: 90px;
     padding-bottom: 125px;
+    background-image: url("../img/booking-bg-tablet.jpg");
+    background-position: top -25px left -1px;
+
+    @include retina {
+      background-image: url("../img/booking-bg-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     padding-top: 60px;
     padding-bottom: 66px;
-    background-size: unset;
+    background-image: url("../img/booking-bg-mobile.jpg");
+    background-position: top left -1px;
+
+    @include retina {
+      background-image: url("../img/booking-bg-mobile@2x.jpg");
+    }
   }
 }
 
