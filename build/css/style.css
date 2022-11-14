@@ -1710,16 +1710,16 @@ nav {
   }
 
   .cruises__img--odysseus {
-    -o-object-position: -103px 34px;
-    object-position: -103px 34px;
+    -o-object-position: -40px 34px;
+    object-position: -40px 34px;
     height: 452px;
   }
 
   .booking {
     padding-top: 90px;
-    padding-bottom: 125px;
+    padding-bottom: 100px;
     background-image: url("../img/booking-bg-tablet.jpg");
-    background-position: top -25px left -1px;
+    background-position: top left;
   }
 
   .booking__container {
@@ -1848,6 +1848,13 @@ nav {
 
   .contacts__map--nojs {
     background-image: url("../img/map-teblet@2x.jpg");
+  }
+}
+
+@media (max-width: 868px) {
+  .cruises__img--odysseus {
+    -o-object-position: -103px 34px;
+    object-position: -103px 34px;
   }
 }
 

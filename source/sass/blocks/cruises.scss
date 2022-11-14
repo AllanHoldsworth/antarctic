@@ -74,8 +74,12 @@
   height: 426px;
 
   @include vp-1023 {
-    object-position: -103px 34px;
+    object-position: -40px 34px;
     height: 452px;
+  }
+
+  @media (max-width: 868px) {
+    object-position: -103px 34px;
   }
 
   @include vp-767 {

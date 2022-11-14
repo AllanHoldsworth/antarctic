@@ -15,9 +15,9 @@
 
   @include vp-1023 {
     padding-top: 90px;
-    padding-bottom: 125px;
+    padding-bottom: 100px;
     background-image: url("../img/booking-bg-tablet.jpg");
-    background-position: top -25px left -1px;
+    background-position: top left;
 
     @include retina {
       background-image: url("../img/booking-bg-tablet@2x.jpg");
