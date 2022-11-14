@@ -1400,7 +1400,7 @@ nav {
 
 .contacts__map--nojs {
   background-image: url("../img/map.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1576,7 +1576,7 @@ nav {
   }
 
   .contacts__map--nojs {
-    background-image: url("../img/main-bg@2x.jpg");
+    background-image: url("../img/map@2x.jpg");
   }
 }
 
@@ -1780,6 +1780,10 @@ nav {
     height: 335px;
   }
 
+  .contacts__map--nojs {
+    background-image: url("../img/map-tablet.jpg");
+  }
+
   .contacts__text-wrapper {
     padding-top: 68px;
     padding-left: 0;
@@ -1840,6 +1844,10 @@ nav {
 
   .booking {
     background-image: url("../img/booking-bg-tablet@2x.jpg");
+  }
+
+  .contacts__map--nojs {
+    background-image: url("../img/map-teblet@2x.jpg");
   }
 }
 
@@ -2132,6 +2140,10 @@ nav {
     width: 100%;
   }
 
+  .contacts__map--nojs {
+    background-image: url("../img/map-mobile.jpg");
+  }
+
   .contacts__text-wrapper {
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
@@ -2194,6 +2206,10 @@ nav {
 
   .booking {
     background-image: url("../img/booking-bg-mobile@2x.jpg");
+  }
+
+  .contacts__map--nojs {
+    background-image: url("../img/map-mobile@2x.jpg");
   }
 }
 

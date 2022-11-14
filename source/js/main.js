@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+  const mapNojs = document.querySelector('.contacts__map--nojs');
+  mapNojs.classList.remove('contacts__map--nojs');
 
   const anchors = document.querySelectorAll('a[href*="#anchor"]');
   if (anchors) {
@@ -38,10 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   iosVhFix();
-
-  const mapNojs = document.querySelector('contacts__map--nojs');
-  mapNojs.classList.remove('header__nav--nojs');
-
 
   function initMap() {
     let map = new ymaps.Map('map', {

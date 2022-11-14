@@ -44,13 +44,29 @@
 
 .contacts__map--nojs {
   background-image: url("../img/map.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-width: 1023px) {
     @include retina {
-      background-image: url("../img/main-bg@2x.jpg");
+      background-image: url("../img/map@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/map-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/map-teblet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/map-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/map-mobile@2x.jpg");
     }
   }
 }
