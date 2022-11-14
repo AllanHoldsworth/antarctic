@@ -42,6 +42,19 @@
   }
 }
 
+.contacts__map--nojs {
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1023px) {
+    @include retina {
+      background-image: url("../img/main-bg@2x.jpg");
+    }
+  }
+}
+
 .contacts__text-wrapper {
   padding-top: 74px;
   padding-left: 103px;

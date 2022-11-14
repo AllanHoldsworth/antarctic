@@ -39,7 +39,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
 
-  // const mapNojs = document.querySelector('contacts__map--nojs');
+  const mapNojs = document.querySelector('contacts__map--nojs');
+  mapNojs.classList.remove('header__nav--nojs');
 
 
   function initMap() {

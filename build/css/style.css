@@ -1398,6 +1398,13 @@ nav {
   height: 306px;
 }
 
+.contacts__map--nojs {
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .contacts__text-wrapper {
   padding-top: 74px;
   padding-left: 103px;
@@ -1566,6 +1573,10 @@ nav {
   .booking {
     background-image: url("../img/booking-bg@2x.jpg");
     background-position: center;
+  }
+
+  .contacts__map--nojs {
+    background-image: url("../img/main-bg@2x.jpg");
   }
 }
 
