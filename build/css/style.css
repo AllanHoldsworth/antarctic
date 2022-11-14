@@ -800,6 +800,7 @@ button,
   display: flex;
   -ms-flex-item-align: start;
   align-self: flex-start;
+  margin-right: 20px;
 }
 
 .header__icon {
@@ -807,7 +808,10 @@ button,
 }
 
 .header__nav {
-  max-width: 80%;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header__menu-button {
@@ -1860,17 +1864,9 @@ nav {
     padding: 0;
   }
 
-  .header__logo-link {
-    margin-right: auto;
-  }
-
   .header__icon {
     width: 42px;
     height: 22px;
-  }
-
-  .header__nav {
-    max-width: unset;
   }
 
   .header__nav .nav__list {
@@ -1936,12 +1932,13 @@ nav {
 
   .header__nav--nojs {
     min-height: 420px;
+    margin: -20px -15px 0 -15px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-line-pack: start;
     align-content: flex-start;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: #f9fbfd;
   }
 

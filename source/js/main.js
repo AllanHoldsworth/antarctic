@@ -39,6 +39,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
 
+  // const mapNojs = document.querySelector('contacts__map--nojs');
+
+
   function initMap() {
     let map = new ymaps.Map('map', {
       center: [59.937635, 30.322618],

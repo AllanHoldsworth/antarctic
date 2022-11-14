@@ -27,10 +27,7 @@
 .header__logo-link {
   display: flex;
   align-self: flex-start;
-
-  @include vp-767 {
-    margin-right: auto;
-  }
+  margin-right: 20px;
 }
 
 .header__icon {
@@ -48,11 +45,8 @@
 }
 
 .header__nav {
-  max-width: 80%;
-
-  @include vp-767 {
-    max-width: unset;
-  }
+  width: 100%;
+  justify-content: space-between;
 }
 
 .header__nav .nav__list {
@@ -173,10 +167,11 @@
 .header__nav--nojs {
   @include vp-767 {
     min-height: 420px;
+    margin: -20px -15px 0 -15px;
     flex-wrap: wrap;
     align-content: flex-start;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: $color-alice-blue;
   }
 }
