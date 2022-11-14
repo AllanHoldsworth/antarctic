@@ -875,7 +875,7 @@ button,
   display: none;
 }
 
-nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
