@@ -2119,7 +2119,7 @@ nav {
 
   .contacts {
     padding-top: 57px;
-    padding-bottom: 22px;
+    padding-bottom: 64px;
   }
 
   .contacts__container {
@@ -2138,6 +2138,7 @@ nav {
     -ms-flex-order: 1;
     order: 1;
     width: 100%;
+    height: 316px;
   }
 
   .contacts__map--nojs {
@@ -2157,6 +2158,10 @@ nav {
 
   .contacts__wrapper {
     margin-bottom: 23px;
+  }
+
+  .contacts__wrapper:last-child {
+    margin-bottom: 0;
   }
 
   .footer {

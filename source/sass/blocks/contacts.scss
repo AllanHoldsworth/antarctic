@@ -8,7 +8,7 @@
 
   @include vp-767 {
     padding-top: 57px;
-    padding-bottom: 22px;
+    padding-bottom: 64px;
   }
 }
 
@@ -39,6 +39,7 @@
     margin-top: 36px;
     order: 1;
     width: 100%;
+    height: 316px;
   }
 }
 
@@ -113,6 +114,12 @@
 
   @include vp-767 {
     margin-bottom: 23px;
+  }
+}
+
+.contacts__wrapper:last-child {
+  @include vp-767 {
+    margin-bottom: 0;
   }
 }
 
