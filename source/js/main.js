@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let pin = new ymaps.Placemark([59.937635, 30.322618], {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/sprite/pin.svg',
+      iconImageHref: './img/sprite/pin.svg',
       iconImageSize: [18, 22],
       iconImageOffset: [0, 0],
     });
