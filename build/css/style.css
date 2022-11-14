@@ -780,6 +780,7 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  background-color: #011c40;
 }
 
 .header {
@@ -801,11 +802,72 @@ button,
   align-self: flex-start;
 }
 
+.header__icon {
+  fill: #f9fbfd;
+}
+
 .header__nav {
   max-width: 80%;
 }
 
 .header__menu-button {
+  display: none;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 22px;
+  height: 14px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.header__nav--closed .header__menu-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #f9fbfd;
+  -webkit-box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
+  box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
+}
+
+.header__nav--opened .header__menu-button {
+  margin-right: 15px;
+  margin-top: 23px;
+}
+
+.header__nav--opened .header__menu-button::before,
+.header__nav--opened .header__menu-button::after {
+  content: "";
+  right: -3px;
+  top: 7px;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #011c40;
+}
+
+.header__nav--opened .header__menu-button::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.header__nav--opened .header__menu-button::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.header__nav--nojs .header__menu-button {
   display: none;
 }
 
@@ -914,6 +976,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  background-color: #8ebfd8;
   padding: 112px 0 122px 0;
 }
 
@@ -1123,6 +1186,7 @@ nav {
 .booking {
   background-image: url("../img/booking-bg.jpg");
   background-repeat: no-repeat;
+  background-color: #80a7de;
   background-position: top -20px center;
   background-size: cover;
   padding: 50px 0;
@@ -1403,6 +1467,10 @@ nav {
 .footer__nav .nav__list {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.footer__icon {
+  fill: #f9fbfd;
 }
 
 .socials {
@@ -1785,10 +1853,15 @@ nav {
 
   .header {
     padding: 20px 0;
+    min-height: 62px;
   }
 
   .header__container {
     padding: 0;
+  }
+
+  .header__logo-link {
+    margin-right: auto;
   }
 
   .header__icon {
@@ -1797,14 +1870,79 @@ nav {
   }
 
   .header__nav {
+    max-width: unset;
+  }
+
+  .header__nav .nav__list {
     display: none;
   }
 
   .header__menu-button {
     display: block;
     margin-left: auto;
-    border: none;
-    background-color: transparent;
+  }
+
+  .header__nav--opened {
+    z-index: 5;
+    position: absolute;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 89%;
+    background-color: #f9fbfd;
+  }
+
+  .header__nav--opened .nav__link,
+  .header__nav--nojs .nav__link {
+    color: #011c40;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__nav--opened .nav__list,
+  .header__nav--nojs .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    gap: 26px 24px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-left: 24px;
+    margin-top: 42px;
+    width: 100%;
+  }
+
+  .header__nav--opened .header__icon,
+  .header__nav--nojs .header__icon {
+    fill: #011c40;
+  }
+
+  .header__nav--opened .header__logo-link,
+  .header__nav--nojs .header__logo-link {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .header__nav--nojs {
+    min-height: 420px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    background-color: #f9fbfd;
   }
 
   .intro__container {
@@ -1965,7 +2103,7 @@ nav {
 
   .contacts {
     padding-top: 57px;
-    padding-bottom: 45px;
+    padding-bottom: 22px;
   }
 
   .contacts__container {

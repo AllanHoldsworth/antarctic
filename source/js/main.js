@@ -24,16 +24,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // mobile menu
 
-  let navMain = document.querySelector('.main-nav');
-  let navToggle = document.querySelector('.main-nav__toggle');
-  navMain.classList.remove('main-nav--nojs');
+  let navMain = document.querySelector('.header__nav');
+  let navToggle = document.querySelector('.header__menu-button');
+  navMain.classList.remove('header__nav--nojs');
   navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
+    if (navMain.classList.contains('header__nav--closed')) {
+      navMain.classList.remove('header__nav--closed');
+      navMain.classList.add('header__nav--opened');
     } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add('header__nav--closed');
+      navMain.classList.remove('header__nav--opened');
     }
   });
 
