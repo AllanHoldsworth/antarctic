@@ -1,18 +1,24 @@
 .socials {
   margin: 0;
   margin-left: auto;
-  display: flex;
+  align-self: flex-start;
+  margin-top: 15px;
+  display: grid;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 27px;
   padding: 0;
   list-style-type: none;
 
   @include vp-1023 {
-    gap: 18px;
+    gap: 18px 16px;
+    margin-top: 5px;
   }
 
   @include vp-767 {
-    margin-left: 0;
+    margin-left: -4px;
     margin-top: 21px;
   }
 }
