@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: column;
   height: 386px;
-  aspect-ratio: 7/10;
   padding: 30px 10px 23px 30px;
   overflow: hidden;
   transition: background-color 170ms ease;
@@ -47,6 +46,7 @@
 
   @include vp-767 {
     height: unset;
+    aspect-ratio: 7/10;
     padding: 30px 10px 17px 25px;
 
     &:hover {
@@ -63,14 +63,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  @include vp-1023 {
-    object-fit: fill;
-  }
 }
 
 .cruises__img--olympia {
-  object-position: -39px 14px;
+  object-position: -39px -1px;
   height: 416px;
 
   @include vp-1023 {
@@ -80,7 +76,7 @@
 }
 
 .cruises__img--odysseus {
-  object-position: -118px 16px;
+  object-position: -118px -6px;
   height: 426px;
 
   @include vp-1023 {

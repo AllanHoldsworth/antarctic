@@ -1061,7 +1061,6 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   height: 386px;
-  aspect-ratio: 7/10;
   padding: 30px 10px 23px 30px;
   overflow: hidden;
   -webkit-transition: background-color 170ms ease;
@@ -1091,14 +1090,14 @@ button,
 }
 
 .cruises__img--olympia {
-  -o-object-position: -39px 14px;
-  object-position: -39px 14px;
+  -o-object-position: -39px -1px;
+  object-position: -39px -1px;
   height: 416px;
 }
 
 .cruises__img--odysseus {
-  -o-object-position: -118px 16px;
-  object-position: -118px 16px;
+  -o-object-position: -118px -6px;
+  object-position: -118px -6px;
   height: 426px;
 }
 
@@ -1732,11 +1731,6 @@ button,
     padding: 29px 35px 23px;
   }
 
-  .cruises__img {
-    -o-object-fit: fill;
-    object-fit: fill;
-  }
-
   .cruises__img--olympia {
     -o-object-position: unset;
     object-position: unset;
@@ -1907,7 +1901,8 @@ button,
 
   .top-wrapper {
     min-height: 500px;
-    background-image: url("../img/main-bg-mobile.jpg");
+    background-size: cover;
+    background-image: url("../img/main-bg.jpg");
   }
 
   .header {
@@ -2089,6 +2084,7 @@ button,
 
   .cruises__item {
     height: unset;
+    aspect-ratio: 7/10;
     padding: 30px 10px 17px 25px;
   }
 
@@ -2238,7 +2234,7 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
-    background-image: url("../img/main-bg-mobile@2x.jpg");
+    background-image: url("../img/main-bg@2x.jpg");
   }
 
   .booking {
