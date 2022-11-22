@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   height: 386px;
+  aspect-ratio: 7/10;
   padding: 30px 10px 23px 30px;
   overflow: hidden;
   transition: background-color 170ms ease;
@@ -45,6 +46,7 @@
   }
 
   @include vp-767 {
+    height: unset;
     padding: 30px 10px 17px 25px;
 
     &:hover {
@@ -56,11 +58,10 @@
 .cruises__img {
   position: absolute;
   z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 
   @include vp-1023 {
@@ -74,6 +75,7 @@
 
   @include vp-1023 {
     object-position: unset;
+    height: 100%;
   }
 }
 
@@ -83,6 +85,7 @@
 
   @include vp-1023 {
     object-position: unset;
+    height: 100%;
   }
 }
 
