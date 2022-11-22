@@ -30,7 +30,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     background-color: $color-tangaroa;
     padding: 28px 23px 23px 23px;
   }
@@ -39,7 +39,7 @@
     padding: 30px 10px 27px 35px;
 
     &:hover,
-    &:focus {
+    &:focus-within {
       padding: 29px 35px 23px;
     }
   }
@@ -61,48 +61,28 @@
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
-  // object-fit: cover;
+  object-fit: cover;
+
+  @include vp-1023 {
+    object-fit: fill;
+  }
 }
 
 .cruises__img--olympia {
-  // object-position: -39px 14px;
+  object-position: -39px 14px;
   height: 416px;
 
   @include vp-1023 {
-    // object-position: -59px 30px;
-    height: 445px;
-  }
-
-  @include vp-767 {
     object-position: unset;
-  }
-
-  @media (max-width: 414px) {
-    // object-position: -59px 30px;
-    height: 445px;
   }
 }
 
 .cruises__img--odysseus {
-  // object-position: -118px 16px;
+  object-position: -118px 16px;
   height: 426px;
 
   @include vp-1023 {
-    // object-position: -40px 34px;
-    height: 452px;
-  }
-
-  @media (max-width: 868px) {
-    // object-position: -103px 34px;
-  }
-
-  @include vp-767 {
-    // object-position: unset;
-  }
-
-  @media (max-width: 414px) {
-    // object-position: -126px 34px;
-    height: 453px;
+    object-position: unset;
   }
 }
 
@@ -137,13 +117,13 @@
 }
 
 .cruises__item:hover .cruises__description-list,
-.cruises__item:focus .cruises__description-list {
+.cruises__item:focus-within .cruises__description-list {
   display: flex;
   flex-direction: column;
 }
 
 .cruises__item:hover .cruises__subtitle,
-.cruises__item:focus .cruises__subtitle {
+.cruises__item:focus-within .cruises__subtitle {
   margin-bottom: 14px;
   margin-top: 0;
 }
@@ -180,7 +160,7 @@
 }
 
 .cruises__item:hover .cruises__link,
-.cruises__item:focus .cruises__link {
+.cruises__item:focus-within .cruises__link {
   display: flex;
   align-items: center;
   justify-content: center;

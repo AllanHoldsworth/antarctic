@@ -1073,7 +1073,7 @@ button,
 }
 
 .cruises__item:hover,
-.cruises__item:focus {
+.cruises__item:focus-within {
   background-color: #011c40;
   padding: 28px 23px 23px 23px;
 }
@@ -1088,13 +1088,19 @@ button,
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .cruises__img--olympia {
+  -o-object-position: -39px 14px;
+  object-position: -39px 14px;
   height: 416px;
 }
 
 .cruises__img--odysseus {
+  -o-object-position: -118px 16px;
+  object-position: -118px 16px;
   height: 426px;
 }
 
@@ -1129,7 +1135,7 @@ button,
 }
 
 .cruises__item:hover .cruises__description-list,
-.cruises__item:focus .cruises__description-list {
+.cruises__item:focus-within .cruises__description-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1140,7 +1146,7 @@ button,
 }
 
 .cruises__item:hover .cruises__subtitle,
-.cruises__item:focus .cruises__subtitle {
+.cruises__item:focus-within .cruises__subtitle {
   margin-bottom: 14px;
   margin-top: 0;
 }
@@ -1177,7 +1183,7 @@ button,
 }
 
 .cruises__item:hover .cruises__link,
-.cruises__item:focus .cruises__link {
+.cruises__item:focus-within .cruises__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1724,16 +1730,23 @@ button,
   }
 
   .cruises__item:hover,
-  .cruises__item:focus {
+  .cruises__item:focus-within {
     padding: 29px 35px 23px;
   }
 
+  .cruises__img {
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
   .cruises__img--olympia {
-    height: 445px;
+    -o-object-position: unset;
+    object-position: unset;
   }
 
   .cruises__img--odysseus {
-    height: 452px;
+    -o-object-position: unset;
+    object-position: unset;
   }
 
   .booking {
@@ -2082,11 +2095,6 @@ button,
     padding: 29px 24px 23px;
   }
 
-  .cruises__img--olympia {
-    -o-object-position: unset;
-    object-position: unset;
-  }
-
   .booking {
     padding-top: 60px;
     padding-bottom: 66px;
@@ -2238,16 +2246,6 @@ button,
 
   .contacts__map--nojs {
     background-image: url("../img/map-mobile@2x.jpg");
-  }
-}
-
-@media (max-width: 414px) {
-  .cruises__img--olympia {
-    height: 445px;
-  }
-
-  .cruises__img--odysseus {
-    height: 453px;
   }
 }
 
