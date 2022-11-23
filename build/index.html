@@ -307,7 +307,7 @@
                 <p class="form__description">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
                 <div class="form__field">
                   <input type="text" placeholder="Имя" name="name" required minlength="1">
-                  <input type="tel" placeholder="Телефон" name="phone" required pattern="^[0-9]+$" title="Телефон должен состоять только из цифр">
+                  <input type="tel" placeholder="Телефон" name="phone" required pattern="\+?[0-9\s\-\(\)]+" title="Телефон должен состоять только из цифр">
                   <input type="email" placeholder="Email" required>
                   <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" checked required>
                   <label for="agreement">Я согласен на обработку моих персональных данных</label>

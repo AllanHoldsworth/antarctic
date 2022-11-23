@@ -23,6 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
     for (let anchor of anchors) {
       anchor.addEventListener('click', (evt) => {
         evt.preventDefault();
+        if (navMain.classList.contains('header__nav--opened')) {
+          closeMenu();
+        }
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
           behavior: 'smooth',
